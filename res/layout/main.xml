@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/layout"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:android="http://schemas.android.com/apk/res/android" android:background="#000">
+
+    <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_centerHorizontal="true" android:id="@+id/texto_peso" android:text="Peso(kg)" android:fitsSystemWindows="true"></TextView>
+    <EditText android:inputType="numberDecimal" android:layout_height="wrap_content" android:layout_below="@+id/texto_peso" android:maxLines="1" android:gravity="center" android:contentDescription="Peso" android:fitsSystemWindows="true" android:id="@+id/peso" android:layout_centerHorizontal="true" android:hint=" Peso " android:maxLength="4" android:layout_width="130dp">
+       </EditText>
+    <EditText android:layout_above="@+id/texto_peso" android:maxLines="1" android:gravity="center" android:contentDescription="Altura" android:fitsSystemWindows="true" android:layout_centerHorizontal="true" android:id="@+id/altura" android:maxLength="3" android:hint="Altura" android:inputType="number" android:layout_height="wrap_content" android:layout_width="130dp">
+        <requestFocus></requestFocus>
+      	</EditText>
+    <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:id="@+id/text_altura" android:text="Altura(cm)" android:layout_above="@+id/altura" android:fitsSystemWindows="true"></TextView>
+    <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:text="Calcule seu" android:id="@+id/title1" android:fitsSystemWindows="true"></TextView>
+    <TextView android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceLarge" android:layout_height="wrap_content" android:layout_below="@+id/title1" android:layout_centerHorizontal="true" android:id="@+id/title2" android:text="Índice de Massa Corporal" android:fitsSystemWindows="true"></TextView>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/peso" android:layout_centerHorizontal="true" android:id="@+id/calcular" android:text="Calcular" android:fitsSystemWindows="true"></Button>
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentRight="true" android:text="Sair" android:id="@+id/quit" android:fitsSystemWindows="true"></Button>
+    <ImageView android:layout_height="wrap_content" android:src="@drawable/logo2" android:layout_width="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:clickable="true" android:id="@+id/logo1" android:focusable="true"></ImageView>
+</RelativeLayout>
